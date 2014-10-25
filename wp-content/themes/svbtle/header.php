@@ -30,14 +30,159 @@
 	
 		?>
 
-		<style>blockquote {border-color: <?php echo $color ?>;}figure.logo, aside.alsoby li a:hover, aside.kudo.complete span.circle {background-color: <?php echo $color ?>;}section.preview header#begin h2,ul#user_meta a:hover,nav.pagination span.next a,nav.pagination span.prev a {color: <?php echo $color ?>;}ul#user_meta a:hover,nav.pagination span.next a,nav.pagination span.prev a {border-color: <?php echo $color ?>;}::-moz-selection { background: <?php echo $color ?>; color: #fff; text-shadow: none;}::selection { background: <?php echo $color ?>; color: #fff; text-shadow: none;}
+		<style>
+		blockquote {border-color: <?php echo $color ?>;}figure.logo, aside.alsoby li a:hover, aside.kudo.complete span.circle {background-color: <?php echo $color ?>;}section.preview header#begin h2,ul#user_meta a:hover,nav.pagination span.next a,nav.pagination span.prev a {color: <?php echo $color ?>;}ul#user_meta a:hover,nav.pagination span.next a,nav.pagination span.prev a {border-color: <?php echo $color ?>;}::-moz-selection { background: <?php echo $color ?>; color: #fff; text-shadow: none;}::selection { background: <?php echo $color ?>; color: #fff; text-shadow: none;}
 		</style>
 		
 		<?php wp_head();  ?>
+		<style>
+		figure.logo a {
+			background-image: url(wp-content/themes/svbtle/images/logo.png);
+			
+		}
+		figure.logo, aside.alsoby li a:hover, aside.kudo.complete span.circle{
+			background-color: white;
+		}
+		/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.navbar {
+  color:green;
+  padding: 20px 0;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  border: none;
+  margin-bottom: 0;
+  min-height: 0;
+}
+.navbar-fixed-top {
+  border-bottom: none !important;
+}
+.minified {
+  padding: 5px 0;
+}
+.minified .navbar-brand {
+  height: auto !important;
+}
+img.logo {
+  width: 100%
+}
+.darken-menu {
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.dark-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.navbar-header {
+  display: table;
+  width: 20%;
+}
+.navbar-header .navbar-brand {
+  display: table-cell;
+  vertical-align: middle;
+  float: left;
+  padding: 0;
+  height: 50px;
+}
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+  margin: 0;
+}
+.navbar-toggle {
+  margin: 0;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-nav {
+  float: none;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+}
+.navbar-nav li a {
+  color: #fff;
+  text-decoration: none;
+  background: none;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+#my-nav {
+  float: right;
+}
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+  background-color: inherit !important;
+  color: #d9a13f;
+  text-decoration: none;
+}
+.navbar-nav .active a {
+  color: #d9a13f;
+  background: none;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.navbar-nav .active a:hover,
+.navbar-nav .active a:focus {
+  color: #bf8726;
+  background: none;
+}
+
+#twitter-nav {
+  padding-left:4px
+}
+		</style>
 
 		
 	</head>
 	<body <?php body_class(); ?>>
+		 <!-- Navigation Bar -->
+  <div class="navbar navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#welcome"><img class="logo" src="assets/white1.png" alt=""></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <nav id="my-nav" class="navbar-collapse collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#welcome">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Leadership</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="http://twitter.com/staunchrobots" id="twitter-nav"><img src="assets/twitter-small.png" width="24" heigth="19"/></a></li>
+        </ul>
+      </nav><!--/.navbar-collapse -->
+
+    </div>
+  </div>
 
 		<header id="sidebar">
 			<figure class="logo medium">
@@ -104,3 +249,5 @@
         <?php if (isset($_GET['not_found'])): ?>
         <div id="notice"><span>:(</span><br><br>Not found.</div>
         <?php endif; ?>
+
+

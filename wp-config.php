@@ -15,7 +15,15 @@
  */
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
-$db = parse_url($_ENV["DATABASE_URL"]);
+
+if ($development) {
+	//$url = 'postgres://hadnlfdubznnbe:HfjIB5kZYN8kPJ4RJntf-CMd2c@ec2-54-197-241-82.compute-1.amazonaws.com:5432/d3rhft941kblii';
+	$url = '';
+	$db = parse_url($url);
+} else {
+	$db = parse_url($_ENV["DATABASE_URL"]);
+}
+
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */

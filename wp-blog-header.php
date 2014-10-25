@@ -1,4 +1,5 @@
 <?php
+$development = $_SERVER['SERVER_NAME'] == 'localhost' ? true : false;
 /**
  * Loads the WordPress environment and template.
  *

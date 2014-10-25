@@ -1,4 +1,25 @@
-Wordpress on Heroku with Svbtle
+1. Staunch Robots Setup
+===============================
+
+The instructions in section 2 below refer to using the Svtle theme. Follow them for intial setup, then come back to this section to complete the installation.
+
+1. Add the following menu items at Appearance => Menus
+   <pre><code>
+   Home -> staunchrobots.com
+   About -> staunchrobots.com#about
+   Testimonials -> staunchrobots.com#testimonials
+   Leadership -> staunchrobots.com#team
+   Contact -> staunchrobots.com#contact
+   Twitter -> twitter.com/staunchrobots
+   </code></pre>
+1. In the root of this repository, open theme-styles.css and copy the code there.
+1. In WordPress, go to Themes and activate the Stanley theme.
+1. Next click Theme Options, linked to the right of the theme preview thumbnail.
+1. Select Custom CSS, paste the code you copied into the text box and save.
+
+
+
+2. Wordpress on Heroku with Svbtle
 ===============================
 
 This project is a template for installing and running [WordPress](http://wordpress.org/) on [Heroku](http://www.heroku.com/) with the '[wp-svbtle](https://github.com/gravityonmars/wp-svbtle)' theme. The repository comes bundled with [PostgreSQL for WordPress](http://wordpress.org/extend/plugins/postgresql-for-wordpress/) and [WP Read-Only](http://wordpress.org/extend/plugins/wpro/).

@@ -1,0 +1,46 @@
+.navbar-inverse { 
+	background-color: #000; 
+	border-color: rgba(0,0,0,0.8) ;
+	padding-top: 0;
+	padding-bottom: 0;
+	color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+#footer {
+	background-color: #000;
+	padding-bottom: 0;
+	padding-top: 20px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	text-transform: none;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #d9a13f
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Bree Serif', serif;
+	font-family: 'Droid Serif', serif;
+}
+
+.active a {
+	color: #d9a13f;
+	background: transparent url("/wp-content/menu-bullet.png") no-repeat center 85% !important;
+	outline: none;
+}
+
+#grey {
+	background: #ffffff;
+	background-image: url(/wp-content/themes/stanleywp/css/images/logo.png);
+	background-repeat: no-repeat;
+	background-position:0.5em;
+}
+	div.container {
+	height:59px;
+}
