@@ -100,7 +100,7 @@
             ?>
             <style type="text/css">
              li#menu-item-<?php echo $twitter_menu_id; ?> {
-              background-image: url(/wp-content/themes/stanleywp/css/images/twitter-small.png);
+              background-image: url(/blog/wp-content/themes/stanleywp/css/images/twitter-small.png);
               background-repeat: no-repeat;
               text-indent: -9999px; 
               background-position:0.5em;
