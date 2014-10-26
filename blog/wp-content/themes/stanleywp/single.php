@@ -28,12 +28,9 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
 
-           <section class="post-meta">
-            <p class="author-avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 50 ); ?><ba><?php the_author_meta( 'display_name' ); ?></ba></p>
-            <p><bd><time class="post-date"><?php the_date(); ?></time></bd></p>
-          </section><!-- end of .post-meta -->
-
-          <h4><?php the_title(); ?></h4>
+           
+          <h1><?php the_title(); ?></h1>
+          <p class="post-meta">Posted on <?php the_time('F j, Y'); ?> by <?php the_author_meta( 'display_name' ); ?>  <?php edit_post_link('edit post','&nbsp;&nbsp;&nbsp;<small>[ ',' ]</small>'); ?></p>
 
 
           <?php if ( has_post_thumbnail() ) : ?>

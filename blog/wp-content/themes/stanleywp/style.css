@@ -238,6 +238,10 @@ img#logo-bug{
 	padding-right: 30px;
 }
 
+p.post-meta{
+	font-size: 14px;
+}
+
 #wrapper{
 	padding-top: 60px;
 }
