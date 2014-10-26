@@ -14,6 +14,7 @@ Check that it was created correctly by running `ls blog` - the output should be 
 
 The instructions in section 2 below refer to using the Svtle theme. Follow them for intial setup, then come back to this section to complete the installation.
 
+1. Go to Appearance => Themes and activate the StanleyWP theme
 1. Go to Appearance => Menus and create a menu called Main Menu.
 1. In the Theme Locations to the left, choose Main Menu and click save.
 1. Add the following menu items at Appearance => Menus
