@@ -45,6 +45,7 @@
           $color_id = 'grey';
         } else {
           $color_id = 'white'; }
+          $color_id = 'white';
           ?>
 
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -70,7 +71,7 @@
 
                   <header>
                     <h4 class="post-title"><?php the_title(); ?></h4>
-                    <p>Posted on <?php the_time('F j, Y'); ?> by <?php the_author_meta( 'display_name' ); ?></p>
+                    <p>Posted on <?php the_time('F j, Y'); ?> by <?php the_author_meta( 'display_name' ); ?>  <?php edit_post_link('edit post','&nbsp;&nbsp;&nbsp;<small>[ ',' ]</small>'); ?></p>
                   </header>
 
 
@@ -95,7 +96,7 @@
                     </div> <!-- /container -->
                   </div> 
 
-                <p><bd><time class="post-date"><?php the_date(); ?></time></bd></p>
+
                 </article><!-- end of #post-<?php the_ID(); ?> -->
 
 

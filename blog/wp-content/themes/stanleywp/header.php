@@ -40,7 +40,7 @@
 
 <?php wp_head(); ?> 
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Bree+Serif' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('url')?>/../theme-styles.css">
 </head>
 
 <body <?php body_class(); ?>>
@@ -111,14 +111,11 @@
             <?php
             }
             ?>
-            <style>
-            <?php include(dirname(__FILE__) . "/../../../theme-styles.css"); ?>
-            </style>
+            
           </div>
         </div>
      </div>           
 </nav>
-           
  
     </header><!-- end of header -->
     <?php gents_header_end(); // after header hook ?>
@@ -126,5 +123,6 @@
 	<?php gents_wrapper(); // before wrapper ?>
     
         <div id="wrapper" class="clearfix">
+          <a href="/"><img id="logo-bug" src="<?php bloginfo('url')?>/wp-content/themes/stanleywp/css/images/logo.png" /></a>
     
     <?php gents_in_wrapper(); // wrapper hook ?>
