@@ -24,6 +24,7 @@ The instructions in section 2 below refer to using the Svtle theme. Follow them 
    Testimonials -> staunchrobots.com#testimonials
    Leadership -> staunchrobots.com#team
    Contact -> staunchrobots.com#contact
+   Blog -> staunchrobots.com/blog
    Twitter -> twitter.com/staunchrobots
    </code></pre>
 1. Go to Plugins and activate the WordPress SEO plugin
