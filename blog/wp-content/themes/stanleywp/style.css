@@ -232,6 +232,8 @@ div.container {
 
 img#header-logo{
   margin-top: -10px;
+  margin-left: -140px;
+  max-width:none;
 }
 img#logo-bug{
 	float: left;
@@ -254,7 +256,8 @@ p.post-meta{
 	padding-top: 0;
 }
 .navbar-collapse.collapse.navbar-responsive-collapse{
-	margin-right:80px;
+	margin-right:124px;
+	padding-top:6px;
 }
 .menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.active  a{
 	color: #d9a13f;
