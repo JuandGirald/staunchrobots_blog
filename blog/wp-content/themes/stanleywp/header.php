@@ -39,7 +39,6 @@
     <![endif]-->
 
 <?php wp_head(); ?> 
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Bree+Serif' rel='stylesheet' type='text/css'>
 </head>
 
 <body <?php body_class(); ?>>
