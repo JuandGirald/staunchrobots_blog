@@ -103,6 +103,7 @@
               background-image: url(/blog/wp-content/themes/stanleywp/css/images/twitter-small.png);
               background-repeat: no-repeat;
               text-indent: -9999px; 
+              margin-right: 200px;
               background-position:0.5em;
             }
             </style>

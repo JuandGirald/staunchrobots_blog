@@ -104,6 +104,7 @@
               background-repeat: no-repeat;
               text-indent: -9999px; 
               background-position:0.5em;
+              margin-right: 20px;
             }
             </style>
             <?php
