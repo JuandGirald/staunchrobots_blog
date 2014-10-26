@@ -61,8 +61,8 @@
                   </section><!-- end of .post-meta -->
 
                   <header>
-                    <h4 class="post-title"><?php the_title(); ?></h4>
-                  </header>
+                    <h4 class="post-title"><?php the_title(); ?></h1>
+                  </he1der>
                   <section class="post-entry">
                     <?php if ( has_post_thumbnail()) : ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
