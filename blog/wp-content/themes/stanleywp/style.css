@@ -253,3 +253,9 @@ p.post-meta{
 #white, #grey{
 	padding-top: 0;
 }
+.navbar-collapse.collapse.navbar-responsive-collapse{
+	margin-right:80px;
+}
+.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.active  a{
+	color: #fff;
+}
