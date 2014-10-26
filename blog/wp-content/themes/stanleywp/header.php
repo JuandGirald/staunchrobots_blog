@@ -106,11 +106,14 @@
               background-position:0.5em;
               margin-right: 20px;
             }
+            
             </style>
             <?php
             }
             ?>
-            
+            <style>
+            <?php include(dirname(__FILE__) . "/../../../theme-styles.css"); ?>
+            </style>
           </div>
         </div>
      </div>           
