@@ -54,9 +54,10 @@
               <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
 
+                  <!--
                   <section class="post-meta">          
                       <p class="author-avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 50 ); ?><ba><?php the_author_meta( 'display_name' ); ?></ba></p>
-                         <p><bd><time class="post-date"><?php the_date(); ?></time></bd></p>                
+                         <p><bd><time class="post-date"><?php the_date(); ?></time></bd></p>
                   </section><!-- end of .post-meta -->
 
 
@@ -69,10 +70,12 @@
 
                   <header>
                     <h4 class="post-title"><?php the_title(); ?></h4>
+                    <p>Posted on <?php the_date(); ?> by <?php the_author_meta( 'display_name' ); ?></p>
                   </header>
 
 
                   <?php the_content(); ?>
+
 
                   <?php custom_link_pages(array(
                     'before' => '<nav class="pagination"><ul>' . __(''),
@@ -92,7 +95,7 @@
                     </div> <!-- /container -->
                   </div> 
 
-
+                <p><bd><time class="post-date"><?php the_date(); ?></time></bd></p>
                 </article><!-- end of #post-<?php the_ID(); ?> -->
 
 
