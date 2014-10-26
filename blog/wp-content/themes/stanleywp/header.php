@@ -63,16 +63,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-
+            <?php $logo_img = '<img id="header-logo" src="/blog/wp-content/themes/stanleywp/css/images/white1.png" width="190" />'; ?>
            <?php if( bi_get_data('custom_logo') !== '' ) { ?>
             <div id="logo"><a href="<?php echo home_url(); ?>/" title="<?php bloginfo( 'name' ); ?>" rel="home">
                 <img src="<?php echo bi_get_data('custom_logo'); ?>" alt="<?php bloginfo( 'name' ) ?>" />
             </a></div>
             <?php } else { ?>
             <?php if (is_front_page()) { ?>
-            <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><b><?php bloginfo( 'name' ) ?></b></a>
+            <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php echo $logo_img ?></a>
             <?php } else { ?>
-            <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><b><?php bloginfo( 'name' ) ?></b></a>
+            <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php echo $logo_img ?></a>
             <?php } } ?>
         </div>
           <div class="navbar-collapse collapse navbar-responsive-collapse">

@@ -70,7 +70,7 @@
 
                   <header>
                     <h4 class="post-title"><?php the_title(); ?></h4>
-                    <p>Posted on <?php the_date(); ?> by <?php the_author_meta( 'display_name' ); ?></p>
+                    <p>Posted on <?php the_time('F j, Y'); ?> by <?php the_author_meta( 'display_name' ); ?></p>
                   </header>
 
 

@@ -17,10 +17,12 @@
 .navbar {
 	margin-bottom: 0px;
 	text-transform: none;
+	position:fixed;
+	height:20px;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-	color: #d9a13f
+	color: #d9a13f;
 }
 
 body {
@@ -41,6 +43,9 @@ body {
 	background-repeat: no-repeat;
 	background-position:0.5em;
 }
-	div.container {
+div.container {
 	margin-left:240px;
+}
+#header-logo{
+  margin-top: -10px;
 }
