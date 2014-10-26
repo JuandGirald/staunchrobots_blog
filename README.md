@@ -26,7 +26,7 @@ The instructions in section 2 below refer to using the Svtle theme. Follow them 
    Contact -> staunchrobots.com#contact
    Twitter -> twitter.com/staunchrobots
    </code></pre>
-
+1. Go to Plugins and activate the WordPress SEO plugin
 
 
 3. Wordpress on Heroku with Svbtle
