@@ -265,13 +265,17 @@ p.post-meta{
 }
 
 .post-entry ol, .post-entry ul {
+	font-size: 20pt;
 	list-style-type: decimal;
 	list-style-position: inside;
-	margin-bottom: 20px;
+	margin-bottom: 2em;
 }
 .post-entry ol li, .post-entry ul li, {
 	margin-bottom: 20px;	
 }
 .post-entry ul {
 	list-style-type: circle;
+}
+article div, article p {
+	font-size: 20pt;
 }
