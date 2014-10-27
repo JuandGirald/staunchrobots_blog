@@ -253,7 +253,7 @@ p.post-meta{
 	padding-top: 60px;
 }
 #white, #grey{
-	padding-top: 0;
+	padding: 0;
 }
 .navbar-collapse.collapse.navbar-responsive-collapse{
 	margin-right:124px;
