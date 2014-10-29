@@ -44,9 +44,7 @@
           <?php if ( get_the_author_meta( 'description' ) != '' ) : ?>
 
           <div id="author-meta">
-            <?php if ( function_exists( 'get_avatar' ) ) { echo get_avatar( get_the_author_meta( 'email' ), '80' ); }?>
-            <div class="about-author"><?php _e( 'About', 'gents' ); ?> <?php the_author_posts_link(); ?></div>
-            <p><?php the_author_meta( 'description' ) ?></p>
+            <p class="post-meta">Posted on <?php the_time('F j, Y'); ?> by <?php the_author_meta( 'display_name' ); ?>  <?php edit_post_link('edit post','&nbsp;&nbsp;&nbsp;<small>[ ',' ]</small>'); ?></p>
           </div><!-- end of #author-meta -->
 
         <?php endif; // no description, no author's meta ?>
