@@ -44,3 +44,17 @@ jQuery(function(){
   
 
 });
+
+function dimOrUndimMenu(event){
+    if(jQuery(document).scrollTop() > jQuery('#nav-primary').height()){
+      jQuery('#nav-primary').addClass('dimmed')
+    } else {
+      jQuery('#nav-primary').removeClass('dimmed')
+    }
+    
+}
+
+jQuery(document).on("scroll", dimOrUndimMenu);
+jQuery(document).on("load", dimOrUndimMenu);
+
+
