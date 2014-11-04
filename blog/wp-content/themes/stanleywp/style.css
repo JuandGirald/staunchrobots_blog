@@ -31,9 +31,9 @@ body {
 }
 
 /* Titles */
-h1, h2, h3, h4, h5, h6 { color: #333; font-family: 'Montserrat', sans-serif; font-weight: 700; }
+h1, h2, h3, h4, h5, h6 { color: #d9a13f; font-family: 'Montserrat', sans-serif; font-weight: 700; }
 
-h1 { font-size: 35px; margin-bottom: 30px; margin-top: 30px; }
+h1 { font-size: 35px; margin-bottom: 30px; }
 
 .author-avatar img { -webkit-border-radius: 95px; -moz-border-radius: 95px; border-radius: 95px; }
 
@@ -123,9 +123,9 @@ hr {
 
 /* +++++ Color Wraps / Blog Page +++++ */
 
-#grey { background-color: #f2f2f2; padding-bottom: 60px; padding-top: 60px; }
+.grey { background-color: #f2f2f2; padding-bottom: 60px; padding-top: 60px; }
 
-#white { background-color: #ffffff; padding-bottom: 60px; padding-top: 60px; }
+.white { background-color: #ffffff; padding-bottom: 60px; padding-top: 60px; }
 
 
 
@@ -239,10 +239,8 @@ img#header-logo{
   max-width:none;
 }
 img#logo-bug{
-	float: left;
-	margin-top: 34px;
 	margin-left: 10px;
-	position: fixed;
+	width:100px;
 }
 .post-entry{
 	padding-right: 30px;
@@ -253,9 +251,13 @@ p.post-meta{
 }
 
 #wrapper{
-	padding-top: 60px;
+	padding-top: 80px;
 }
-#white, #grey{
+
+#wrapper div.container {
+	margin-left: 100px;
+}
+.white, .grey{
 	padding: 0;
 }
 .navbar-collapse.collapse.navbar-responsive-collapse{
@@ -270,6 +272,10 @@ article div, article p,.post-entry ol li, .post-entry ul li {
 	font-size: 14pt;
 	line-height:200%;
 }
+
+article div.container {
+	margin-left: 0;
+}
 .post-entry ol, .post-entry ul {
 	list-style-type: decimal;
 	list-style-position: inside;
@@ -280,4 +286,8 @@ article div, article p,.post-entry ol li, .post-entry ul li {
 }
 .post-entry ul {
 	list-style-type: circle;
+}
+
+#sidebar-right{
+	margin-top:24px;
 }

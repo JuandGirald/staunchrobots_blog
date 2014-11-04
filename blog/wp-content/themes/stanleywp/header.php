@@ -120,6 +120,6 @@
 	<?php gents_wrapper(); // before wrapper ?>
     
         <div id="wrapper" class="clearfix">
-          <a href="/"><img id="logo-bug" src="<?php bloginfo('url')?>/wp-content/themes/stanleywp/css/images/logo.png" /></a>
+        
     
     <?php gents_in_wrapper(); // wrapper hook ?>

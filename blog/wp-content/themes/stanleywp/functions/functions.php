@@ -336,6 +336,15 @@ function gents_breadcrumb_lists() {
     function gents_widgets_init() {
 
           register_sidebar(array(
+            'name' => __('Right Sidebar', 'gents'),
+            'description' => __('footer.php', 'gents'),
+            'id' => 'sidebar-right',
+            'before_title' => '<div class="footer-title"><h4>',
+            'after_title' => '</h4></div>',
+            'before_widget' => '<div id="%1$s" class="widget-wrapper %2$s">',
+            'after_widget' => '</div>'
+        ));
+          register_sidebar(array(
             'name' => __('Left Footer', 'gents'),
             'description' => __('footer.php', 'gents'),
             'id' => 'footer-left',
