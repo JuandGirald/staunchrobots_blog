@@ -15,7 +15,6 @@
 ?>
 <?php get_header(); ?>
 
-<div id="content">
 
   <?php if ( have_posts() ) : ?>
 
@@ -23,66 +22,49 @@
 
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <div id="white">
+    <div class="white">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-lg-8">
 
            
           <h1><?php the_title(); ?></h1>
           <p class="post-meta">Posted on <?php the_time('F j, Y'); ?> by <?php the_author_meta( 'display_name' ); ?>  <?php edit_post_link('edit post','&nbsp;&nbsp;&nbsp;<small>[ ',' ]</small>'); ?></p>
-
-
           <?php if ( has_post_thumbnail() ) : ?>
-
           <p><?php the_post_thumbnail(); ?></p>
-        <?php endif; ?>
+          <?php endif; ?>
+          <section class="post-entry">
+            <?php the_content(); ?>
+            <?php custom_link_pages( array('before' => '<nav class="pagination"><ul>' . __( '' ),
+                                           'after' => '</ul></nav>',
+                                           'next_or_number' => 'next_and_number', // activate parameter overloading
+                                           'nextpagelink' => __( '&rarr;' ),
+                                           'previouspagelink' => __( '&larr;' ),
+                                           'pagelink' => '%',
+                                           'echo' => 1 )); ?>
+          </section><!-- end of .post-entry -->
+          <footer class="article-footer">
+            <?php if ( bi_get_data( 'enable_disable_tags', '1' ) == '1' ) {?>
+            <div class="post-data">
+              <?php the_tags( __( 'TAGS:', 'gents' ) . ' ', ' - ', '<br />' ); ?>
+            </div><!-- end of .post-data -->
+            <?php } ?>
 
-        <section class="post-entry">
-          <?php the_content(); ?>
-
-          <?php if ( get_the_author_meta( 'description' ) != '' ) : ?>
-
-          <div id="author-meta">
-            <p class="post-meta">Posted on <?php the_time('F j, Y'); ?> by <?php the_author_meta( 'display_name' ); ?>  <?php edit_post_link('edit post','&nbsp;&nbsp;&nbsp;<small>[ ',' ]</small>'); ?></p>
-          </div><!-- end of #author-meta -->
-
-        <?php endif; // no description, no author's meta ?>
-
-
-        <?php custom_link_pages( array(
-    'before' => '<nav class="pagination"><ul>' . __( '' ),
-    'after' => '</ul></nav>',
-    'next_or_number' => 'next_and_number', // activate parameter overloading
-    'nextpagelink' => __( '&rarr;' ),
-    'previouspagelink' => __( '&larr;' ),
-    'pagelink' => '%',
-    'echo' => 1 )
-); ?>
-
-
-                          </section><!-- end of .post-entry -->
-
-                          <footer class="article-footer">
-                            <?php if ( bi_get_data( 'enable_disable_tags', '1' ) == '1' ) {?>
-                            <div class="post-data">
-                              <?php the_tags( __( 'TAGS:', 'gents' ) . ' ', ' - ', '<br />' ); ?>
-                            </div><!-- end of .post-data -->
-                            <?php } ?>
-
-                            <div class="post-edit"><?php edit_post_link( __( 'Edit', 'gents' ) ); ?></div>
-                          </footer>
-
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </article><!-- end of #post-<?php the_ID(); ?> -->
+            <div class="post-edit"><?php edit_post_link( __( 'Edit', 'gents' ) ); ?></div>
+          </footer>
+        </div>
+        <div class="col-md-4" id="sidebar-right">
+         <?php dynamic_sidebar('footer-left'); ?>
+         <a href="/blog"><img id="logo-bug" src="<?php bloginfo('url')?>/wp-content/themes/stanleywp/css/images/logo.png" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article><!-- end of #post-<?php the_ID(); ?> -->
 
                 <div class="container">
                   <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-lg-8">
 
                       <?php comments_template( '', true ); ?>
 
@@ -96,7 +78,7 @@
 
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
+                  <div class="col-lg-8">
 
                     <nav class="navigation">
                      <div class="previous"><?php next_posts_link( __( '&#8249; Older posts', 'gents' ) ); ?></div>
@@ -114,7 +96,7 @@
 
            <div class="container">
             <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
+              <div class="col-lg-8">
                 <header>
                  <h1 class="title-404"><?php _e( '404 &#8212; Fancy meeting you here!', 'gents' ); ?></h1>
                </header>
@@ -127,15 +109,18 @@
                </footer>
 
              </div>
+             <div class="col-md-4" id="sidebar-right">
+               <?php dynamic_sidebar('footer-left'); ?>
+               <a href="/blog"><img id="logo-bug" src="<?php bloginfo('url')?>/wp-content/themes/stanleywp/css/images/logo.png" /></a>
+             </div>
            </div>
+           
          </div>
 
        </article>
 
 
      <?php endif; ?>
-
-   </div><!-- end of #content -->
 
 
 
