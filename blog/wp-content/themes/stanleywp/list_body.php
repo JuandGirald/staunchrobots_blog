@@ -1,22 +1,22 @@
-<?php
-/**
- * Index Template
- *
- *
- * @file           index.php
- * @package        StanleyWP 
- * @author         Brad Williams & Carlos Alvarez 
- * @copyright      2011 - 2014 Gents Themes
- * @license        license.txt
- * @version        Release: 3.0.3
- * @link           http://codex.wordpress.org/Theme_Development#Index_.28index.php.29
- * @since          available since Release 1.0
- */
-?>
-<?php get_header(); ?>
 <div class="container">
   <div class="row">
     <div class="col-lg-8">
+    <?php if ($_GLOBALS['is_search']) : ?>
+      <h4 class="search-result-summayr"><?php _e('We found','gents'); ?> 
+        <?php
+        $allsearch = &new WP_Query("s=$s&showposts=-1");
+        $key = esc_html($s, 1);
+        $count = $allsearch->post_count;
+        _e(' &#8211; ', 'gents');
+        echo $count . ' ';
+        _e('articles for ', 'gents');
+        _e('<span class="post-search-terms">', 'gents');
+        echo $key;
+        _e('</span><!-- end of .post-search-terms -->', 'gents');
+        wp_reset_query();
+        ?>
+    </h4>
+    <?php endif; ?>
     <?php global $more; $more = 0; ?>
     <?php
       global $wp_query;
@@ -113,5 +113,3 @@
    </div>
   </div><!-- /row -->
 </div> <!-- /container -->
-
-   
