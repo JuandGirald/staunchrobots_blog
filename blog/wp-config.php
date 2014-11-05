@@ -26,7 +26,7 @@ if ($development) {
 
 
 define('WP_HOME','http://staunchrobotsblog.herokuapp.com/blog');
-define('WP_SITEURL','http://www.staunchrobots.com/blog');
+define('WP_SITEURL','http://staunchrobotsblog.herokuapp.com/blog');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
