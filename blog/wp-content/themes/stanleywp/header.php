@@ -67,9 +67,9 @@
             </a></div>
             <?php } else { ?>
             <?php if (is_front_page()) { ?>
-            <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php echo $logo_img ?></a>
+            <a class="navbar-brand" href="/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php echo $logo_img ?></a>
             <?php } else { ?>
-            <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php echo $logo_img ?></a>
+            <a class="navbar-brand" href="/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php echo $logo_img ?></a>
             <?php } } ?>
         </div>
           <div class="navbar-collapse collapse navbar-responsive-collapse">
