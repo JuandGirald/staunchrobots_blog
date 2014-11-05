@@ -1,15 +1,4 @@
-1. Heroku run setup
-===============================
-
-After doing the initial deploy, you must create a symlink in the base directory.
-
-    heroku run bash [--app staunchrobotsblog]
-    ln -s ./ blog
-
-Check that it was created correctly by running `ls blog` - the output should be a directory listing identical to `ls`
-
-
-2. Staunch Robots Setup
+1. Staunch Robots Setup
 ===============================
 
 The instructions in section 2 below refer to using the Svtle theme. Follow them for intial setup, then come back to this section to complete the installation.
@@ -19,18 +8,18 @@ The instructions in section 2 below refer to using the Svtle theme. Follow them 
 1. In the Theme Locations to the left, choose Main Menu and click save.
 1. Add the following menu items at Appearance => Menus
    <pre><code>
-   Home -> staunchrobots.com
-   About -> staunchrobots.com#about
-   Testimonials -> staunchrobots.com#testimonials
-   Leadership -> staunchrobots.com#team
-   Contact -> staunchrobots.com#contact
-   Blog -> staunchrobots.com/blog
+   Home -> www.staunchrobots.com
+   About -> www.staunchrobots.com#about
+   Testimonials -> www.staunchrobots.com#testimonials
+   Leadership -> www.staunchrobots.com#team
+   Contact -> www.staunchrobots.com#contact
+   Blog -> www.staunchrobots.com/blog
    Twitter -> twitter.com/staunchrobots
    </code></pre>
 1. Go to Plugins and activate the WordPress SEO plugin
 
 
-3. Wordpress on Heroku with Svbtle
+2. Wordpress on Heroku with Svbtle
 ===============================
 
 This project is a template for installing and running [WordPress](http://wordpress.org/) on [Heroku](http://www.heroku.com/) with the '[wp-svbtle](https://github.com/gravityonmars/wp-svbtle)' theme. The repository comes bundled with [PostgreSQL for WordPress](http://wordpress.org/extend/plugins/postgresql-for-wordpress/) and [WP Read-Only](http://wordpress.org/extend/plugins/wpro/).

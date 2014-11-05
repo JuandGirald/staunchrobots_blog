@@ -90,6 +90,12 @@
                 foreach($items as $key => $value){
                   if('twitter' == strtolower($value->title)){
                     $twitter_menu_id = $value->ID;
+                  } elseif ('blog' == strtolower($value->title)){
+                  ?>
+                    <script type="text/javascript">
+                      var blogMenuId = "#menu-item-<?= $value->ID?>";
+                    </script>
+                  <?php
                   }
                 }
                   

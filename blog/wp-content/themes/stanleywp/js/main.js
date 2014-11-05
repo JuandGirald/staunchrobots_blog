@@ -45,7 +45,7 @@ jQuery(function(){
 
 });
 
-function dimOrUndimMenu(event){
+function dimOrUndimMenu(){
     if(jQuery(document).scrollTop() > jQuery('#nav-primary').height()){
       jQuery('#nav-primary').addClass('dimmed')
     } else {
@@ -54,7 +54,16 @@ function dimOrUndimMenu(event){
     
 }
 
+//this looks for a JavaScript variable called blogMenuId, which is set in  header.php
+function setBlogMenuActive(){
+  if('string' == typeof blogMenuId){
+    jQuery(blogMenuId).addClass('active')
+  }
+}
+
 jQuery(document).on("scroll", dimOrUndimMenu);
-jQuery(document).on("load", dimOrUndimMenu);
+jQuery(document).on("ready", dimOrUndimMenu);
+jQuery(document).on("ready", setBlogMenuActive);
+
 
 
