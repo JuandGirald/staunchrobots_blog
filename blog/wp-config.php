@@ -25,7 +25,7 @@ if ($development) {
 }
 
 
-define('WP_HOME','http://statusrobotsblog.herokuapp.com/blog');
+define('WP_HOME','http://staunchrobotsblog.herokuapp.com/blog');
 define('WP_SITEURL','http://www.staunchrobots.com/blog');
 
 // ** MySQL settings - You can get this info from your web host ** //
