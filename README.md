@@ -18,6 +18,9 @@ The instructions in section 2 below refer to using the Svtle theme. Follow them 
    </code></pre>
 1. Go to Plugins and activate the WordPress SEO plugin
 
+**Important**
+If you ever need to change the site url, you can't do that on the settings page like with normal WordPress installations. That's because we've had problems with people inputting a bad url and breaking things. Instead, you'll need to open `wp-config.php` and edit the values there. Look for `define('WP_HOME',`
+
 
 2. Wordpress on Heroku with Svbtle
 ===============================

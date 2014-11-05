@@ -15,6 +15,7 @@
  */
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
+$development = ($_SERVER['SERVER_NAME'] == 'localhost') ? true : false;
 
 if ($development) {
 	//$url = 'postgres://hadnlfdubznnbe:HfjIB5kZYN8kPJ4RJntf-CMd2c@ec2-54-197-241-82.compute-1.amazonaws.com:5432/d3rhft941kblii';
@@ -27,8 +28,8 @@ if ($development) {
 
 
 if (!$development){
-	// define('WP_HOME','http://www.staunchrobots.com/blog');
-	// define('WP_SITEURL','http://staunchrobotsblog.herokuapp.com/blog');
+	define('WP_HOME','http://www.staunchrobots.com/blog');
+	define('WP_SITEURL','http://staunchrobotsblog.herokuapp.com/blog');
 }
 
 // ** MySQL settings - You can get this info from your web host ** //
