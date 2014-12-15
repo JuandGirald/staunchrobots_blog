@@ -102,6 +102,11 @@ hr {
 
 .progress-bar-theme { background-color: #1abc9c; }
 
+/* make header elements expand to fill browser */
+header, nav,  #nav-primary{
+	width:100%;
+}
+
 
 /* Helpers */
 
@@ -232,7 +237,6 @@ div.container {
 	text-transform: none;
 	position:fixed;
 	height:59px;
-	width:2000px;
 }
 
 img#header-logo{
