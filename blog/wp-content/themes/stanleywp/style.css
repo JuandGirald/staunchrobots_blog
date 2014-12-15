@@ -78,7 +78,6 @@ hr {
 }
 
 
-
 .dimmed {opacity:.7;}/* used to dim the navbar when you scroll down */
 
 .navbar { margin-bottom: 0px; text-transform: uppercase; }
@@ -233,6 +232,7 @@ div.container {
 	text-transform: none;
 	position:fixed;
 	height:59px;
+	width:2000px;
 }
 
 img#header-logo{
