@@ -49,7 +49,8 @@ get_header(); ?>
                             }
                         } elseif (is_category()) {
                             printf(
-                                __('Category Archives: %s', 'bootstrapwp'),
+                                //__('Category Archives: %s', 'bootstrapwp'),
+                                __('%s', 'bootstrapwp'),
                                 '<span>' . single_cat_title('', false) . '</span>'
                             );
                             // Show an optional category description
