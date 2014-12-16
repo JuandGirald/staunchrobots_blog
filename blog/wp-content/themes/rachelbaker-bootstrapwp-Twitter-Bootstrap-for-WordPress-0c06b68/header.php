@@ -33,8 +33,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="/" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-                    <?php bloginfo('name'); ?></a>
+                <a class="brand" href="/" title="Staunch Robots" rel="home">
+                    Staunch Robots</a>
                 <?php wp_nav_menu(
                         array(
                             'menu' => 'main-menu',
