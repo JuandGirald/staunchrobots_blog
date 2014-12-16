@@ -67,3 +67,26 @@ h1, h2, h3, h4, h5, h6 { color: #d9a13f; font-family: 'Montserrat', sans-serif; 
 #s {
   width: auto;
 }
+
+.navbar-inverse .navbar-inner {
+    border-color: #323332;
+    background-color:#323332;
+    background-image: none;
+}
+
+.navbar-inverse .navbar-inner li > a{
+  color:#FFF;
+}
+
+.navbar-inverse .navbar-inner li.selected > a{
+  color:#D28732;
+  font-weight: bold;
+}
+
+.navbar-inverse .navbar-inner li > a:hover{
+  color:#D28732;
+}
+.navbar-inverse .navbar-inner li > a{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+

@@ -33,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
+                <a class="brand" href="/" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
                     <?php bloginfo('name'); ?></a>
                 <?php wp_nav_menu(
                         array(
@@ -48,4 +48,36 @@
             </div>
         </div>
     </div>
+    <?php 
+    $items = wp_get_nav_menu_items('Main Menu');
+    //find the menu item for twitter; used in styling below
+    $twitter_menu_id = false;
+    foreach($items as $key => $value){
+      if('twitter' == strtolower($value->title)){
+        $twitter_menu_id = $value->ID;
+      } elseif ('blog' == strtolower($value->title)){
+      ?>
+        <script type="text/javascript">
+          var blogMenuId = "#menu-item-<?= $value->ID?>";
+          jQuery(document).ready(function(){
+            jQuery(blogMenuId).addClass('selected')
+          });
+        </script>
+      <?php
+      }
+    }
+      
+    if($twitter_menu_id) {
+    ?>
+    <style type="text/css">
+     li#menu-item-<?php echo $twitter_menu_id; ?> {
+      background-image: url(/blog/wp-content/themes/stanleywp/css/images/twitter-small.png);
+      background-repeat: no-repeat;
+      text-indent: -9999px; 
+      background-position:0.5em;
+      margin-right: 20px;
+    }
+    
+    </style>
+    <?php } ?>
     <!-- End Header. Begin Template Content -->
