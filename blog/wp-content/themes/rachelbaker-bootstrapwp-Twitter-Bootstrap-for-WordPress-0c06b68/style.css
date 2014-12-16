@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 { color: #d9a13f; font-family: 'Montserrat', sans-serif; 
 
 .navbar-inverse .navbar-inner li.selected > a{
   color:#D28732;
-  font-weight: bold;
+  background: url("/blog/wp-content/themes/rachelbaker-bootstrapwp-Twitter-Bootstrap-for-WordPress-0c06b68/assets/img/menu-bullet.png") no-repeat scroll center 85% transparent !important;
 }
 
 .navbar-inverse .navbar-inner li > a:hover{
@@ -90,4 +90,10 @@ h1, h2, h3, h4, h5, h6 { color: #d9a13f; font-family: 'Montserrat', sans-serif; 
 .navbar-inverse .navbar-inner li > a{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+.navbar .nav > li{
+  line-height: 30px;
+}
 
+.navbar-inverse .brand{
+  margin-top: 5px;
+}
