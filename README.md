@@ -3,7 +3,7 @@
 
 The instructions in section 2 below refer to using the Svtle theme. Follow them for intial setup, then come back to this section to complete the installation.
 
-1. Go to Appearance => Themes and activate the StanleyWP theme
+1. Go to Appearance => Themes and activate the BootstrapWP theme
 1. Go to Appearance => Menus and create a menu called Main Menu.
 1. In the Theme Locations to the left, choose Main Menu and click save.
 1. Add the following menu items at Appearance => Menus
@@ -29,7 +29,7 @@ In order to configure them, do the following:
 
 1. Navigate to the blog home page
 1. Click anywhere on the page except a link or input (i.e. NOT the search input)
-1. Type the following without quotes: "sumome<up arrow>"
+1. Type the following without quotes: "sumome" then the up arrow on your keyboard
 1. This will popup the administration tool. Login credentials are user **admin@staunchrobots.com* and password **blancaj5**
 1. The Scroll Box app creates the popup in the bottom-right corner
 1. The Smart Bar app creates the signup form across the top of the page
