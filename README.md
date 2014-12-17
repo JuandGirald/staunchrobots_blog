@@ -30,7 +30,7 @@ In order to configure them, do the following:
 1. Navigate to the blog home page
 1. Click anywhere on the page except a link or input (i.e. NOT the search input)
 1. Type the following without quotes: "sumome<up arrow>"
-1. This will popup the administration tool
+1. This will popup the administration tool. Login credentials are user **admin@staunchrobots.com* and password **blancaj5**
 1. The Scroll Box app creates the popup in the bottom-right corner
 1. The Smart Bar app creates the signup form across the top of the page
 
